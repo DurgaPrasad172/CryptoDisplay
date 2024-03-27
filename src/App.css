@@ -1,38 +1,90 @@
+/* src/App.css */
+
+/* Background color for the webpage */
+body {
+  background-color: #f2f2f2; /* Light gray */
+}
+
+/* Container for the cards */
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Card styles */
+.price-card {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.price-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Different background and font colors for each card */
+.price-card:nth-child(1) {
+  background-color: #fff; /* White */
+  color: #333; /* Dark gray */
+}
+
+.price-card:nth-child(2) {
+  background-color: #ffe0b2; /* Light orange */
+  color: #663300; /* Brown */
+}
+
+.price-card:nth-child(3) {
+  background-color: #b3e5fc; /* Light blue */
+  color: #01579b; /* Dark blue */
+}
+
+.price-card:nth-child(4) {
+  background-color: #c8e6c9; /* Light green */
+  color: #2e7d32; /* Dark green */
+}
+
+/* src/App.css */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.price-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.price-card {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.price-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price-card h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.price-card p {
+  font-size: 20px;
+  color: #666;
 }
